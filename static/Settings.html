@@ -106,14 +106,22 @@
       } else {
         document.body.style.backgroundImage = `url(${bgUrl})`;
       }
-      window.onload = function () {
-        if (localStorage.getItem('tabName')) {
-          const savedTabName = localStorage.getItem('tabName');
-          document.title = savedTabName;
-          document.getElementById('name').value = savedTabName;
-        }
-      }
     </script>
+  <script>
+    window.onload = function () {
+      if (localStorage.getItem('tabName')) {
+        const savedTabName = localStorage.getItem('tabName');
+        document.title = savedTabName;
+        document.getElementById('name').value = savedTabName;
+      }
+    }
+    function setName() {
+      const input = document.getElementById('name');
+      const newTabName = input.value;
+      document.title = newTabName;
+      localStorage.setItem('tabName', newTabName);
+    }
+  </script>
     <script>
       function setPanicKey() {
         var panicKey = document.getElementById("panicKey").value;
