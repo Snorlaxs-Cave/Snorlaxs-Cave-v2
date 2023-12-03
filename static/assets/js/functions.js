@@ -1,922 +1,929 @@
-function paramount () {
+function paramount() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.paramountplus.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://www.paramountplus.com/');
     });
 
 }
 
-function shittletv () {
+function shittletv() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://shuttletv.net/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://shuttletv.net/');
     });
 
 }
 
-function tm () {
+function tm() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://tlochsta.media/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://tlochsta.media/');
     });
 
 }
 
-function pokemoncom () {
+function pokemoncom() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.pokemon.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://www.pokemon.com/');
     });
 
 }
 
-function widget () {
+function widget() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://e.widgetbot.io/channels/1107344487958724681/1118576886038143157');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://e.widgetbot.io/channels/1107344487958724681/1118576886038143157');
     });
 
 }
 
-function ani () {
+function ani() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://aniwatch.to/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://aniwatch.to/');
     });
 
 }
 
-function whatsapp () {
+function whatsapp() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://web.whatsapp.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://web.whatsapp.com/');
     });
 
 }
 
-function vs () {
+function vs() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://vscode.dev/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://vscode.dev/');
     });
 
 }
 
-function amazon () {
+function amazon() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://amazon.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://amazon.com/');
     });
 
 }
 
-function discord () {
+function discord() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://discord.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://discord.com');
     });
 
 }
 
-function google () {
+function google() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://google.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://google.com');
     });
 
 }
 
-function soundcloud () {
+function soundcloud() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://soundcloud.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://soundcloud.com/');
     });
 
 }
 
-function twitch () {
+function twitch() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://twitch.tv');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://twitch.tv');
     });
 
 }
 
-function max () {
+function max() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://max.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://max.com');
     });
 
 }
 
-function github () {
+function github() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://github.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://github.com/');
     });
 
 }
 
-function geforce () {
+function geforce() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://play.geforcenow.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://play.geforcenow.com');
     });
 
 }
 
-function coolMathGames () {
+function coolMathGames() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://coolmathgames.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://coolmathgames.com');
     });
 
 }
 
-function spotify () {
+function spotify() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://spotify.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://spotify.com');
     });
 
 }
 
-function youtube () {
+function youtube() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://youtube.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://youtube.com');
     });
 
 }
 
-function tiktok () {
+function tiktok() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://tiktok.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://tiktok.com');
     });
 
 }
 
-function chess () {
+function chess() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://chess.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://chess.com');
     });
 
 }
 
-function reddit () {
+function reddit() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://reddit.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://reddit.com');
     });
 
 }
 
-function poki () {
+function poki() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://poki.io');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://poki.io');
     });
 
 }
 
-function cookieclicker () {
+function cookieclicker() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://orteil.dashnet.org/cookieclicker/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://orteil.dashnet.org/cookieclicker/');
     });
 
 }
 
-function hole () {
+function hole() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://hole-io.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://hole-io.com');
     });
 
 }
 
-function ball () {
+function ball() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://red-ball4.com/red-ball-4');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://red-ball4.com/red-ball-4');
     });
 
 }
 
-function paper () {
+function paper() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://paper-io.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://paper-io.com/');
     });
 
 }
 
-function gba () {
+function gba() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/');
     });
 
 }
 
 
-function slope () {
+function slope() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://derpmandev.github.io/unblocked-games/slope');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://derpmandev.github.io/unblocked-games/slope');
     });
 
 }
 
-function twoOneFourEight () {
+function twoOneFourEight() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://derpmandev.github.io/unblocked-games/2048/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://derpmandev.github.io/unblocked-games/2048/');
     });
 
 }
 
-function crossy () {
+function crossy() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://crossyroadunblocked.github.io/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://crossyroadunblocked.github.io/');
     });
 
 }
 
-function garden () {
+function garden() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://jrob774.itch.io/grow-your-guarden');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://jrob774.itch.io/grow-your-guarden');
     });
 
 }
 
-function onevonelol () {
+function onevonelol() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://1v1.lol/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://1v1.lol/');
     });
 
 }
 
-function pool () {
+function pool() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://8ballpool.com/en/game');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://8ballpool.com/en/game');
     });
 
 }
 
-function sfnf () {
+function sfnf() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://fnf.kdata1.com/snorlax/1/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://fnf.kdata1.com/snorlax/1/');
     });
 
 }
 
-function BGS () {
+function BGS() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://bigfoot.pages.dev/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://bigfoot.pages.dev/');
     });
 
 }
 
-function math () {
+function math() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://mathheaven.org/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://mathheaven.org/');
     });
 
 }
 
-function moto () {
+function moto() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://moto-x3m.net/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://moto-x3m.net/');
     });
 
 }
 
-function neal () {
+function neal() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://neal.fun/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://neal.fun/');
     });
 
 }
 
-function ball () {
+function ball() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://red-ball4.com/red-ball-4');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://red-ball4.com/red-ball-4');
     });
 
 }
 
-function subway () {
+function subway() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html');
     });
 
 }
 
-function one () {
+function one() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://hgentry.github.io/1/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://hgentry.github.io/1/');
     });
 
 }
 
-function bitlife () {
+function bitlife() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://xlegends.github.io/bitlife/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://xlegends.github.io/bitlife/');
     });
 
 }
 
-function doge1 () {
+function doge1() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://dogeminer.netlify.app/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://dogeminer.netlify.app/');
     });
 
 }
 
-function drifthunt () {
+function drifthunt() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://webglmath.github.io/drift-hunters/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://webglmath.github.io/drift-hunters/');
     });
 
 }
 
-function tombofthemask () {
+function tombofthemask() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://topvazstore.github.io/g8/tomb-of-the-mask');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://topvazstore.github.io/g8/tomb-of-the-mask');
     });
 
 }
 
 
-function troll () {
+function troll() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://now.gg/apps/roblox-corporation/5349/roblox.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://now.gg/apps/roblox-corporation/5349/roblox.html');
     });
 
 }
 
-function basketball () {
+function basketball() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://topvazstore.github.io/g/basketball-stars');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://topvazstore.github.io/g/basketball-stars');
     });
 
 }
 
-function ovo () {
+function ovo() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://ovounblocked.github.io/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://ovounblocked.github.io/');
     });
 
 }
 
-function geodash () {
+function geodash() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/geodash/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/geodash/index.html');
     });
 
 }
 
-function shittle () {
+function shittle() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://chat.shuttle.rip/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://chat.shuttle.rip/');
     });
 
 }
 
-function p2048 () {
+function p2048() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://filipekiss.github.io/2048/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://filipekiss.github.io/2048/');
     });
 
 }
 
-function zeldaminishcap () {
+function zeldaminishcap() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#zelda_minish');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#zelda_minish');
     });
 
 }
 
-function sonicadvance3 () {
+function sonicadvance3() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#sonic_advance3');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#sonic_advance3');
     });
 
 }
 
-function x () {
+function x() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://x.com');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://x.com');
     });
 
 }
 
-function mc15 () {
+function mc15() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cerealistic.github.io/eaglercraft1.5.2/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cerealistic.github.io/eaglercraft1.5.2/');
     });
 
 }
 
-function mc18 () {
+function mc18() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/minecraft-18/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/minecraft-18/index.html');
     });
 
 }
 
-function agario () {
+function agario() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://agar.io');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://agar.io');
     });
 
 }
 
-function emerald () {
+function emerald() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemonemerald');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemonemerald');
     });
 
 }
 
-function doge2 () {
+function doge2() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/Dogeminer2/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/Dogeminer2/index.html');
     });
 
 }
 
-function doge2miner () {
+function doge2miner() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/Dogeminer2/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/Dogeminer2/index.html');
     });
 
 }
 
-function cluster () {
+function cluster() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://w8.snokido.com/games/unity-webgl/cluster-rush/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://w8.snokido.com/games/unity-webgl/cluster-rush/index.html');
     });
 
 }
 
-function insta () {
+function insta() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.instagram.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://www.instagram.com/');
     });
 
 }
 
-function zombs () {
+function zombs() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://zombsroyale.io/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://zombsroyale.io/');
     });
 
 }
 
-function stumble () {
+function stumble() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.stumbleguys.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://www.stumbleguys.com/');
     });
 
 }
 
-function diep () {
+function diep() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://diep.io/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://diep.io/');
     });
 
 }
 
-function fortnite () {
+function fortnite() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&amp;lang=en_US&amp;asset-id=01_15494ab6-efdd-4280-acbc-c740673f17b4');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&amp;lang=en_US&amp;asset-id=01_15494ab6-efdd-4280-acbc-c740673f17b4');
     });
 
 }
 
-function vex5 () {
+function vex5() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/vex5/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/vex5/index.html');
     });
 
 }
 
-function scratch () {
+function scratch() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://scratch.mit.edu/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://scratch.mit.edu/');
     });
 
 }
 
-function vex7 () {
+function vex7() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.coolmathgames.com/sites/default/files/public_games/43835/?gd_sdk_referrer_url=https%3A%2F%2Fwww.coolmathgames.com%2F0-vex-7');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://www.coolmathgames.com/sites/default/files/public_games/43835/?gd_sdk_referrer_url=https%3A%2F%2Fwww.coolmathgames.com%2F0-vex-7');
     });
 
 }
 
-function retro () {
+function retro() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://game316009.konggames.com/gamez/0031/6009/live/index.html');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://game316009.konggames.com/gamez/0031/6009/live/index.html');
     });
 
 }
 
-function red () {
+function red() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemonred');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemonred');
     });
 
 }
 
-function leaf () {
+function leaf() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemongreen');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemongreen');
     });
 }
 
-function platinum () {
+function platinum() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemonlp');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemonlp');
     });
 }
 
-function tiny () {
+function tiny() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://purepro4561.github.io/Tiny-Fishing/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://purepro4561.github.io/Tiny-Fishing/');
     });
 }
 
-function cps () {
+function cps() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cpstester.org/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://cpstester.org/');
     });
 }
 
-function  smash () {
+function smash() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://smashkarts.io/');  
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://smashkarts.io/');
     });
 }
 
-function  crazygames () {
+function crazygames() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.crazygames.com/');  
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://www.crazygames.com/');
     });
 }
 
-function  conkers () {
+function conkers() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/09/conkers-bad-furr-day.zip ');  
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/09/conkers-bad-furr-day.zip ');
     });
 }
 
 
-function emulatorJS () {
-   location.href = '/emulatorjs';
+function emulatorJS() {
+    location.href = '/emulatorjs';
 }
 
 function cloak() {
     let url = window.location.href;
     var w = window.open("about:blank", "_blank");
     w.document.write('<iframe style="position: absolute;top: 0px;bottom: 0px;right: 0px;width: 100%;border: none;margin: 0;padding: 0;overflow: hidden;z-index: 99999;height: 100%;" src="' + url + '"></iframe>');
-    window.close('','_parent','');
-  }
+    window.close('', '_parent', '');
+}
 
-function glatic () {
+function glatic() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://glatic.games');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://glatic.games');
     });
 
 }
 
 
-function replit () {
+function replit() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://replit.com/');
-    });
-
-}  
-
-function shell () {
-
-    window.navigator.serviceWorker.register('/sw.js', {
-        scope: __uv$config.prefix
-    }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://shellshock.io/');
-    });
-
-}  
-
-function boss () {
-
-    window.navigator.serviceWorker.register('/sw.js', {
-        scope: __uv$config.prefix
-    }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://bonbang.github.io/store5/drift-boss/');
-    });
-
-} 
-
-function baseball () {
-
-    window.navigator.serviceWorker.register('/sw.js', {
-        scope: __uv$config.prefix
-    }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://googlebaseball.github.io/file/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://replit.com/');
     });
 
 }
 
-function cricket () {
+function shell() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://doodlecricket.github.io/#/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://shellshock.io/');
     });
 
 }
 
-function pheonix () {
+function boss() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://static.arcadespot.com/retroemulator.php?system=nds&game=2017/10/phoenix-wright-ace-attorney.zip');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://bonbang.github.io/store5/drift-boss/');
     });
 
-}  
+}
 
-function krunker () {
+function baseball() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://krunker.gettingoverschool.repl.co/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://googlebaseball.github.io/file/');
     });
 
-}  
+}
 
-function nitrotype () {
+function cricket() {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.nitrotype.com/');
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://doodlecricket.github.io/#/');
     });
 
-}  
+}
+
+function pheonix() {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://static.arcadespot.com/retroemulator.php?system=nds&game=2017/10/phoenix-wright-ace-attorney.zip');
+    });
+
+}
+
+function krunker() {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://krunker.gettingoverschool.repl.co/');
+    });
+
+}
+
+function nitrotype() {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href = __uv$config.prefix + __uv$config.encodeUrl('https://www.nitrotype.com/');
+    });
+
+}
 
 
-function ourDiscord () {
+function ourDiscord() {
     window.location.href = 'https://discord.gg/Cqaa8x82Ch';
 }
 
 
-function patreon () {
+function patreon() {
     window.location.href = 'https://patreon.com/SnorlaxCave';
 }
 
-function email () {
+function email() {
     window.location.href = 'birdy@snorlaxscave.site';
 }
 
 
 
-function ourgithub () {
+function ourgithub() {
     window.location.href = 'https://github.com/SPS-Services/cave-v1';
 }
 
-function pluto () {
+function pluto() {
     window.location.href = 'https://discord.gg/obx';
 }
 
-function bgChange (color) {
+function bgChange(color) {
     localStorage.setItem("color", color)
-    window.location=window.location
+    window.location = window.location
 }
 
-function setImageBackground () {
-        var url = document.getElementById('imageUrl').value;
-        localStorage.setItem("backgroundImage", url);
-        window.location.reload();
-    }
+function setImageBackground() {
+    var url = document.getElementById('imageUrl').value;
+    localStorage.setItem("backgroundImage", url);
+    window.location.reload();
+}
+function setName() {
+    const input = document.getElementById('name');
+    const newTabName = input.value;
+
+    document.title = newTabName;
+    localStorage.setItem('tabName', newTabName);
+  }
