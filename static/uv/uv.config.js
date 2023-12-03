@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/students/lesson/',
+    prefix: '/snorlax/learning/',
     bare: '/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
