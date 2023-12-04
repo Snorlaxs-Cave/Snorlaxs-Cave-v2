@@ -551,7 +551,7 @@ nav {
   justify-content: center;
   background-color: rgba(14, 13, 13, 0.459);
   gap: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: fit-content;
 }
 
