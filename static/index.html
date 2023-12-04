@@ -57,14 +57,14 @@
         document.body.style.backgroundImage = `url(${bgUrl})`;
       }
     </script>
-  <script>
-        window.onload = function () {
-          var currentUrl = window.location.href;
-          var win = window.open('about:blank', '_blank');
-          win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
-          window.location.href = "https://www.google.com";
-        }
-  </script>
+<script>
+  window.addEventListener('load', function () {
+    var currentUrl = window.location.href;
+    var win = window.open('about:blank', '_blank');
+    win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
+    window.location.href = "https://www.google.com";
+  });
+</script>
   <script>
     window.onload = function () {
       if (localStorage.getItem('tabName')) {
