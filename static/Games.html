@@ -397,6 +397,34 @@
         }
       });
     </script>
+<script>
+  window.onload = function() {
+      var savedImage = localStorage.getItem('backgroundImage');
+      if(savedImage) {
+          var output = document.body;
+          output.style.backgroundImage = "url('" + savedImage + "')";
+          output.style.backgroundSize = "cover";
+          output.style.backgroundRepeat = "no-repeat";
+      }
+  };
+  
+  var loadFile = function() {
+      document.getElementById('fileInput').click();
+  };
+  
+  var showImage = function(event) {
+      var reader = new FileReader();
+      reader.onload = function(){
+        var output = document.body;
+        output.style.backgroundImage = "url('" + reader.result + "')";
+        output.style.backgroundSize = "cover";
+        output.style.backgroundRepeat = "no-repeat";
+        
+        localStorage.setItem('backgroundImage', reader.result);
+      };
+      reader.readAsDataURL(event.target.files[0]);
+  };
+  </script>
 </body>
 
 </html>
