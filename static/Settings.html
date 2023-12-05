@@ -66,14 +66,13 @@
       <br>
       <br>
       <br>
-      <h1 class="large">Upload from files</h1>
+      <h1 class="large">Upload from file</h1>
       <br>
       <br>
       <button onclick="loadFile()">Upload Background</button>
       <br>
       <br>
       <button onclick="localStorage.removeItem('backgroundImage');window.location.reload();">Reset</button>
-      <br>
       <input type="file" accept="image/*" id="fileInput" style="display: none;" onchange="showImage(event)">
       <br>
     </div>
@@ -193,24 +192,31 @@
   });
 </script>
 <script>
-        function setPanicKey() {
-          var panicKey = document.getElementById("panicKey").value;
-          var panicUrl = document.getElementById("panicUrl").value;
+  window.onload = function () {
+    var savedImage = localStorage.getItem('backgroundImage');
+    if (savedImage) {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + savedImage + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+    }
+  };
 
-          if (!panicUrl.startsWith("https://")) {
-            panicUrl = "https://" + panicUrl;
-          }
+  var loadFile = function () {
+    document.getElementById('fileInput').click();
+  };
 
-          localStorage.setItem("panicKey", panicKey);
-          localStorage.setItem("panicUrl", panicUrl);
-        }
-        document.addEventListener("keydown", function (event) {
-          var storedPanicKey = localStorage.getItem("panicKey");
-          var storedPanicUrl = localStorage.getItem("panicUrl");
+  var showImage = function (event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + reader.result + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
 
-          if (event.key === storedPanicKey && storedPanicUrl) {
-            window.location.replace(storedPanicUrl);
-          }
-        });
-
+      localStorage.setItem('backgroundImage', reader.result);
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+</script>
 </html>
