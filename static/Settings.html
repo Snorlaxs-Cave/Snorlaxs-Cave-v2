@@ -66,10 +66,13 @@
       <br>
       <br>
       <br>
-      <h1 class="large">Upload from</h1>
+      <h1 class="large">Upload from files</h1>
       <br>
       <br>
       <button onclick="loadFile()">Upload Background</button>
+      <br>
+      <button onclick="resetBackground()">Reset Background</button>
+      <br>
       <input type="file" accept="image/*" id="fileInput" style="display: none;" onchange="showImage(event)">
       <br>
     </div>
@@ -198,11 +201,9 @@
       output.style.backgroundRepeat = "no-repeat";
     }
   };
-
   var loadFile = function () {
     document.getElementById('fileInput').click();
   };
-
   var showImage = function (event) {
     var reader = new FileReader();
     reader.onload = function () {
@@ -210,11 +211,14 @@
       output.style.backgroundImage = "url('" + reader.result + "')";
       output.style.backgroundSize = "cover";
       output.style.backgroundRepeat = "no-repeat";
-
       localStorage.setItem('backgroundImage', reader.result);
     };
     reader.readAsDataURL(event.target.files[0]);
   };
-  </script>
+  var resetBackground = function () {
+    var output = document.body;
+    output.style.backgroundImage = '';
+    localStorage.removeItem('backgroundImage');
+  };
 
 </html>
