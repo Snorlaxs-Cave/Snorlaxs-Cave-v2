@@ -231,4 +231,31 @@ function say2() {
   alert("HELL0! changing the tab name and icon will NOT work in about:blank to use this feature please block this tabs popups om your sotes settings thanks!");
 }
 </script>
+  <script>
+    window.addEventListener('keydown', (event) => {
+      const keysPressed = (event.key === '~');
+      if (keysPressed) {
+        localStorage.clear();
+        alert('All settings save data cleared');
+      }
+    });
+  </script>
+  <script>
+    window.addEventListener('keydown', (event) => {
+      const keysPressed = (event.key === '`');
+      if (keysPressed) {
+        document.cookie.split(";").forEach(cookie => {
+          document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        });
+        alert('All saved cookie data cleared');
+      }
+    });
+  </script>
+  <script>
+    const visited = localStorage.getItem('visited');
+    if (!visited) {
+      alert('pro tip: pushing ~ will clear all settings data and pushing ` will clear all cookies works on any page!');
+      localStorage.setItem('visited', true);
+    }
+  </script>
 </html>
