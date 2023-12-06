@@ -436,6 +436,7 @@
       if (keysPressed) {
         localStorage.clear();
         alert('All settings save data cleared');
+    location.reload(true);
       }
     });
   </script>
@@ -447,6 +448,7 @@
           document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
         });
         alert('All saved cookie data cleared');
+    location.reload(true);
       }
     });
   </script>
