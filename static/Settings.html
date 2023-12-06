@@ -252,10 +252,10 @@ function say2() {
     });
   </script>
   <script>
-    const visited = localStorage.getItem('visited2');
-    if (!visited2) {
+    const firstVisit = localStorage.getItem('firstVisit');
+    if (!firstVisit) {
       alert('pro tip: pushing ~ will clear all settings data and pushing ` will clear all cookies works on any page!');
-      localStorage.setItem('visited', true);
+      localStorage.setItem('firstVisit', true);
     }
   </script>
 </html>
