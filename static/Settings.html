@@ -217,4 +217,18 @@
     reader.readAsDataURL(event.target.files[0]);
   };
 </script>
+<body onload="checkPopups()">
+<script>
+function checkPopups() {
+  var newWin = window.open("", "", "width=100, height=100");
+  if (newWin) {
+    newWin.close();
+    say2();
+  }
+}
+
+function say2() {
+  alert("HELL0! changing the tab name and icon will NOT work in about:blank to use this feature please block this tabs popups thanks!");
+}
+</script>
 </html>
