@@ -237,19 +237,21 @@ function say2() {
       if (keysPressed) {
         localStorage.clear();
         alert('All settings save data cleared');
+    location.reload(true);
       }
     });
   </script>
   <script>
-    window.addEventListener('keydown', (event) => {
-      const keysPressed = (event.key === '`');
-      if (keysPressed) {
-        document.cookie.split(";").forEach(cookie => {
-          document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
-        });
-        alert('All saved cookie data cleared');
-      }
+window.addEventListener('keydown', (event) => {
+  const keysPressed = (event.key === '`');
+  if (keysPressed) {
+    document.cookie.split(";").forEach(cookie => {
+      document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
     });
+    alert('All saved cookie data cleared');
+    location.reload(true);
+  }
+});
   </script>
   <script>
     const firstVisit = localStorage.getItem('firstVisit');
