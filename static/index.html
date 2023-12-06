@@ -201,6 +201,33 @@
       reader.readAsDataURL(event.target.files[0]);
   };
   </script>
+<script>
+  const visited = localStorage.getItem('visited');
+  if (!visited) {
+    alert('HELLO! Welcome to Snorlax\'s Cave V2');
+    localStorage.setItem('visited', true);
+  }
+</script>
+<script>
+  window.addEventListener('keydown', (event) => {
+    const keysPressed = (event.key === '~');
+    if (keysPressed) {
+      localStorage.clear();
+      alert('All settings save data cleared');
+    }
+  });
+</script>
+<script>
+  window.addEventListener('keydown', (event) => {
+    const keysPressed = (event.key === '`');
+    if (keysPressed) {
+      document.cookie.split(";").forEach(cookie => {
+        document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+      });
+      alert('All saved cookie data cleared');
+    }
+  });
+</script>
 </body>
 
 </html>
