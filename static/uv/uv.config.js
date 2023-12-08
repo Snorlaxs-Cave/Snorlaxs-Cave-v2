@@ -9,6 +9,65 @@ self.__uv$config = {
     sw: '/uv/uv.sw.js',
 };
 
+  window.onload = function getname() {
+        if (localStorage.getItem('tabName')) {
+          const savedTabName = localStorage.getItem('tabName');
+          document.title = savedTabName;
+          document.getElementById('name').value = savedTabName;
+        }
+      }
+      function setName() {
+        const input = document.getElementById('name');
+        const newTabName = input.value;
+        document.title = newTabName;
+        localStorage.setItem('tabName', newTabName);
+      }
+
+
+      function setPanicKey() {
+        var panicKey = document.getElementById("panicKey").value;
+        localStorage.setItem("panicKey", panicKey);
+      }
+
+      function checkPanicKey(event) {
+        var storedPanicKey = localStorage.getItem("panicKey");
+        if (event.key === storedPanicKey) {
+          window.location.href = "https://www.google.com/";
+        }
+      }
+      document.addEventListener("keydown", checkPanicKey);
+
+  var defaultIcon = "/assets/img/newlogo.png";
+
+  function changeIcon() {
+    var iconUrl = document.getElementById("iconUrl").value;
+    if (!iconUrl) {
+      iconUrl = defaultIcon;
+    }
+    localStorage.setItem("iconUrl", iconUrl);
+
+    var link = document.querySelector("link[rel*='icon']");
+    if (link) {
+      link.parentNode.removeChild(link);
+    }
+
+    var newLink = document.createElement("link");
+    newLink.type = "image/x-icon";
+    newLink.rel = "icon";
+    newLink.href = iconUrl;
+    document.head.appendChild(newLink);
+  }
+
+  window.addEventListener("DOMContentLoaded", function () {
+    var storedIconUrl = localStorage.getItem("iconUrl");
+    if (storedIconUrl) {
+      document.getElementById("iconUrl").value = storedIconUrl;
+      changeIcon();
+    } else {
+      changeIcon();
+    }
+  });
+
 try {
     window.addEventListener('load', function () {
         console.log("loaded");
