@@ -83,8 +83,6 @@ nav {
   min-height: 8vh;
   background-color: rgba(8, 1, 65, 0.329);
   font-family: "Montserrat", sans-serif;
-  position: fixed; 
-  width: 100%; 
 }
 
 .heading {
@@ -225,6 +223,8 @@ nav {
   min-height: 8vh;
   background-color: rgba(8, 1, 65, 0.329);
   font-family: "Montserrat", sans-serif;
+  position: fixed; 
+  width: 100%; 
 }
 
 .heading {
@@ -283,7 +283,7 @@ nav {
 .proxyform {
   text-align: center;
   background-color: rgba(20, 20, 20, 0.616);
-  padding: 70px;
+  padding: 75px;
   width: fit-content;
   height: fit-content;
   margin: auto;
@@ -568,4 +568,10 @@ nav {
 .v2 a:hover {
   transform: scale(1.09);
   transition: .1s
+}
+main {
+  padding-top: 9vh;
+}
+.home {
+  padding-top: 20vh; 
 }
