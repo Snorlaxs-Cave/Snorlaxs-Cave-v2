@@ -83,6 +83,8 @@ nav {
   min-height: 8vh;
   background-color: rgba(8, 1, 65, 0.329);
   font-family: "Montserrat", sans-serif;
+  position: fixed; 
+  width: 100%; 
 }
 
 .heading {
