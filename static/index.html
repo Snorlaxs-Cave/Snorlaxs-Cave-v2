@@ -31,18 +31,17 @@
       <li><a href="/settings">Settings</a></li>
     </ul>
   </nav>
-  <br>
-  <br>
-  <form class="proxyform">
-    <div data-m="bounce-down" data-m-duration="1">
-      <h1 class="large">Welcome to Snorlax's Cave!</h1>
-      <br>
-      <input class="proxy" placeholder="Search The Web" style="color:white;"></input>
-      <br>
-  </form>
+  <div class="home">
+    <form class="proxyform">
+      <div data-m="bounce-down" data-m-duration="1">
+        <h1 class="large">Welcome to Snorlax's Cave!</h1>
+        <br>
+        <input class="proxy" placeholder="Search The Web" style="color:white;"></input>
+        <br>
+    </form>
   </div>
-<div class="v2" onclick="window.open('https://github.com/SPS-Services/Snorlaxs-Cave', '_blank')">
-<div style="cursor: pointer; color: rgb(255, 255, 255);">V2.0 BETA</div>
+  <div class="v2" onclick="window.open('https://github.com/SPS-Services/Snorlaxs-Cave', '_blank')">
+    <div style="cursor: pointer; color: rgb(255, 255, 255);">V2.0 BETA</div>
     <script src="/assets/js/index.js"></script>
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
@@ -55,60 +54,60 @@
         document.body.style.backgroundImage = `url(${bgUrl})`;
       }
     </script>
-<script>
-window.addEventListener('load', function () {
-  var currentUrl = window.location.href;
-  if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
-    if (window.open('', '_blank')) {
-      sessionStorage.setItem('tabOpened', 'true');
-      var win = window.open('about:blank', '_blank');
-      win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
-      win.onbeforeunload = function () {
-        sessionStorage.removeItem('tabOpened');
-      };
-      window.close();
-    } else if (!sessionStorage.getItem('alertShown')) {
-      alert("Please enable pop-ups for auto about:blank cloaking to work.");
-      sessionStorage.setItem('alertShown', 'true');
-    }
-  }
-});
-</script>
-  <script>
-    window.onload = function () {
-      if (localStorage.getItem('tabName')) {
-        const savedTabName = localStorage.getItem('tabName');
-        document.title = savedTabName;
-        document.getElementById('name').value = savedTabName;
-      }
-    }
-    function setName() {
-      const input = document.getElementById('name');
-      const newTabName = input.value;
-      document.title = newTabName;
-      localStorage.setItem('tabName', newTabName);
-    }
-  </script>
     <script>
-        function setPanicKey() {
-          var panicKey = document.getElementById("panicKey").value;
-          var panicUrl = document.getElementById("panicUrl").value;
-
-          if (!panicUrl.startsWith("https://")) {
-            panicUrl = "https://" + panicUrl;
+      window.addEventListener('load', function () {
+        var currentUrl = window.location.href;
+        if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
+          if (window.open('', '_blank')) {
+            sessionStorage.setItem('tabOpened', 'true');
+            var win = window.open('about:blank', '_blank');
+            win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
+            win.onbeforeunload = function () {
+              sessionStorage.removeItem('tabOpened');
+            };
+            window.close();
+          } else if (!sessionStorage.getItem('alertShown')) {
+            alert("Please enable pop-ups for auto about:blank cloaking to work.");
+            sessionStorage.setItem('alertShown', 'true');
           }
-
-          localStorage.setItem("panicKey", panicKey);
-          localStorage.setItem("panicUrl", panicUrl);
         }
-        document.addEventListener("keydown", function (event) {
-          var storedPanicKey = localStorage.getItem("panicKey");
-          var storedPanicUrl = localStorage.getItem("panicUrl");
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        if (localStorage.getItem('tabName')) {
+          const savedTabName = localStorage.getItem('tabName');
+          document.title = savedTabName;
+          document.getElementById('name').value = savedTabName;
+        }
+      }
+      function setName() {
+        const input = document.getElementById('name');
+        const newTabName = input.value;
+        document.title = newTabName;
+        localStorage.setItem('tabName', newTabName);
+      }
+    </script>
+    <script>
+      function setPanicKey() {
+        var panicKey = document.getElementById("panicKey").value;
+        var panicUrl = document.getElementById("panicUrl").value;
 
-          if (event.key === storedPanicKey && storedPanicUrl) {
-            window.location.replace(storedPanicUrl);
-          }
-        });
+        if (!panicUrl.startsWith("https://")) {
+          panicUrl = "https://" + panicUrl;
+        }
+
+        localStorage.setItem("panicKey", panicKey);
+        localStorage.setItem("panicUrl", panicUrl);
+      }
+      document.addEventListener("keydown", function (event) {
+        var storedPanicKey = localStorage.getItem("panicKey");
+        var storedPanicUrl = localStorage.getItem("panicUrl");
+
+        if (event.key === storedPanicKey && storedPanicUrl) {
+          window.location.replace(storedPanicUrl);
+        }
+      });
     </script>
 </body>
 <script>
@@ -147,61 +146,61 @@ window.addEventListener('load', function () {
   });
 </script>
 <script>
-  window.onload = function() {
-      var savedImage = localStorage.getItem('backgroundImage');
-      if(savedImage) {
-          var output = document.body;
-          output.style.backgroundImage = "url('" + savedImage + "')";
-          output.style.backgroundSize = "cover";
-          output.style.backgroundRepeat = "no-repeat";
-      }
+  window.onload = function () {
+    var savedImage = localStorage.getItem('backgroundImage');
+    if (savedImage) {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + savedImage + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+    }
   };
-  
-  var loadFile = function() {
-      document.getElementById('fileInput').click();
+
+  var loadFile = function () {
+    document.getElementById('fileInput').click();
   };
-  
-  var showImage = function(event) {
-      var reader = new FileReader();
-      reader.onload = function(){
-        var output = document.body;
-        output.style.backgroundImage = "url('" + reader.result + "')";
-        output.style.backgroundSize = "cover";
-        output.style.backgroundRepeat = "no-repeat";
-        
-        localStorage.setItem('backgroundImage', reader.result);
-      };
-      reader.readAsDataURL(event.target.files[0]);
+
+  var showImage = function (event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + reader.result + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+
+      localStorage.setItem('backgroundImage', reader.result);
+    };
+    reader.readAsDataURL(event.target.files[0]);
   };
-  </script>
+</script>
 <script>
-  window.onload = function() {
-      var savedImage = localStorage.getItem('backgroundImage');
-      if(savedImage) {
-          var output = document.body;
-          output.style.backgroundImage = "url('" + savedImage + "')";
-          output.style.backgroundSize = "cover";
-          output.style.backgroundRepeat = "no-repeat";
-      }
+  window.onload = function () {
+    var savedImage = localStorage.getItem('backgroundImage');
+    if (savedImage) {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + savedImage + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+    }
   };
-  
-  var loadFile = function() {
-      document.getElementById('fileInput').click();
+
+  var loadFile = function () {
+    document.getElementById('fileInput').click();
   };
-  
-  var showImage = function(event) {
-      var reader = new FileReader();
-      reader.onload = function(){
-        var output = document.body;
-        output.style.backgroundImage = "url('" + reader.result + "')";
-        output.style.backgroundSize = "cover";
-        output.style.backgroundRepeat = "no-repeat";
-        
-        localStorage.setItem('backgroundImage', reader.result);
-      };
-      reader.readAsDataURL(event.target.files[0]);
+
+  var showImage = function (event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + reader.result + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+
+      localStorage.setItem('backgroundImage', reader.result);
+    };
+    reader.readAsDataURL(event.target.files[0]);
   };
-  </script>
+</script>
 <script>
   const visited = localStorage.getItem('visited');
   if (!visited) {
@@ -215,7 +214,7 @@ window.addEventListener('load', function () {
     if (keysPressed) {
       localStorage.clear();
       alert('All settings save data cleared');
-    location.reload(true);
+      location.reload(true);
     }
   });
 </script>
@@ -227,10 +226,36 @@ window.addEventListener('load', function () {
         document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
       });
       alert('All saved cookie data cleared');
-    location.reload(true);
+      location.reload(true);
     }
   });
 </script>
+<audio id="myAudio">
+  <source src="Snorlax.mp4" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+  var keys = {};
+
+  window.addEventListener('keydown', function (e) {
+    keys[e.key] = true;
+    if (keys['s'] && keys['b']) {
+      document.getElementById('myAudio').play();
+      localStorage.setItem('audioPlayed', 'true');
+    }
+  });
+
+  window.addEventListener('keyup', function (e) {
+    keys[e.key] = false;
+  });
+
+  window.addEventListener('load', function () {
+    if (localStorage.getItem('audioPlayed') === 'true') {
+      document.getElementById('myAudio').play();
+    }
+  });
+</script>
+</div>
 </body>
 
 </html>
