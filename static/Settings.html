@@ -41,121 +41,121 @@
 
     </ul>
   </nav>
-  <br>
-  <div class="settings">
-    <br>
-    <h1 class="large" ;">Background Changer</h1>
-    <div class="search-results" style="display: block;justify-content: center; flex-wrap: wrap; gap:10px;">
+  <main>
+    <div class="settings">
       <br>
-      <input class="search-bar" style="width:250px;height:50px;margin:10px;" id="imageUrl" type="text"
-        placeholder="Enter image URL">
-      <button onclick="setImageBackground()" style="width:70px;height:45px;">Apply</button>
-      <button onclick="localStorage.removeItem('backgroundImage');window.location.reload();"
-        style="width:70px;height:45px;">Reset</button>
-      <br>
-      <br>
-      <br>
-      </p>
-      <h1 class="large">About:Blank</h1>
-      <a href="#" onclick="cloak()" style="text-decoration: none;color:white;">
+      <h1 class="large" ;">Background Changer</h1>
+      <div class="search-results" style="display: block;justify-content: center; flex-wrap: wrap; gap:10px;">
+        <br>
+        <input class="search-bar" style="width:250px;height:50px;margin:10px;" id="imageUrl" type="text"
+          placeholder="Enter image URL">
+        <button onclick="setImageBackground()" style="width:70px;height:45px;">Apply</button>
+        <button onclick="localStorage.removeItem('backgroundImage');window.location.reload();"
+          style="width:70px;height:45px;">Reset</button>
         <br>
         <br>
-        <button>about:blank</button></a>
-      <br>
-      <br>
-      <br>
-      <h1 class="large">Upload from file</h1>
-      <br>
-      <br>
-      <button onclick="loadFile()">Upload Background</button>
-      <br>
-      <br>
-      <button onclick="localStorage.removeItem('backgroundImage');window.location.reload();">Reset</button>
-      <input type="file" accept="image/*" id="fileInput" style="display: none;" onchange="showImage(event)">
-      <br>
-      <br>
-    </div>
-    </br>
-    <div class="settings2">
-      <br>
-      <h1 class="large">Change Tab Name</h1>
-      <br>
-      <a href="#" onclick="setName()" style="text-decoration: none;color:white;">
-        <p>
-          <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="name"
-            placeholder="Enter A New Name">
-          <button onclick="setName()">Change Tab</button>
+        <br>
         </p>
-      </a>
-      <br>
-      <br>
-      <h1 class="large">Panic Key</h1>
-      <br>
-      <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicKey"
-        placeholder="Enter panic key">
-      <br>
-      <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicUrl"
-        placeholder="Enter panic URL">
-      <br>
-      <button onclick="setPanicKey()">Set Panic Key</button>
-      <br>
-      <br>
-      <br>
-      <p>
-      <h1 class="large">Change Tab Icon</h1>
-      <br>
-      <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="iconUrl"
-        placeholder="Enter icon URL">
-      <button onclick="changeIcon()">Change Icon</button>
-    </div>
-    <script src="/assets/js/index.js"></script>
-    <script src="/uv/uv.bundle.js"></script>
-    <script src="/uv/uv.config.js"></script>
-    <script>
-      // Custom Background Check
-      var bgUrl = localStorage.getItem('backgroundImage');
-      if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
-        document.body.style.backgroundImage = `url('/assets/img/snorlax_background.jpg')`;
-      } else {
-        document.body.style.backgroundImage = `url(${bgUrl})`;
-      }
-    </script>
-    <script>
-      window.onload = function getname() {
-        if (localStorage.getItem('tabName')) {
-          const savedTabName = localStorage.getItem('tabName');
-          document.title = savedTabName;
-          document.getElementById('name').value = savedTabName;
+        <h1 class="large">About:Blank</h1>
+        <a href="#" onclick="cloak()" style="text-decoration: none;color:white;">
+          <br>
+          <br>
+          <button>about:blank</button></a>
+        <br>
+        <br>
+        <br>
+        <h1 class="large">Upload from file</h1>
+        <br>
+        <br>
+        <button onclick="loadFile()">Upload Background</button>
+        <br>
+        <br>
+        <button onclick="localStorage.removeItem('backgroundImage');window.location.reload();">Reset</button>
+        <input type="file" accept="image/*" id="fileInput" style="display: none;" onchange="showImage(event)">
+        <br>
+        <br>
+      </div>
+      </br>
+      <div class="settings2">
+        <br>
+        <h1 class="large">Change Tab Name</h1>
+        <br>
+        <a href="#" onclick="setName()" style="text-decoration: none;color:white;">
+          <p>
+            <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="name"
+              placeholder="Enter A New Name">
+            <button onclick="setName()">Change Tab</button>
+          </p>
+        </a>
+        <br>
+        <br>
+        <h1 class="large">Panic Key</h1>
+        <br>
+        <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicKey"
+          placeholder="Enter panic key">
+        <br>
+        <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicUrl"
+          placeholder="Enter panic URL">
+        <br>
+        <button onclick="setPanicKey()">Set Panic Key</button>
+        <br>
+        <br>
+        <br>
+        <p>
+        <h1 class="large">Change Tab Icon</h1>
+        <br>
+        <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="iconUrl"
+          placeholder="Enter icon URL">
+        <button onclick="changeIcon()">Change Icon</button>
+      </div>
+      <script src="/assets/js/index.js"></script>
+      <script src="/uv/uv.bundle.js"></script>
+      <script src="/uv/uv.config.js"></script>
+      <script>
+        // Custom Background Check
+        var bgUrl = localStorage.getItem('backgroundImage');
+        if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+          document.body.style.backgroundImage = `url('/assets/img/snorlax_background.jpg')`;
+        } else {
+          document.body.style.backgroundImage = `url(${bgUrl})`;
         }
-      }
-      function setName() {
-        const input = document.getElementById('name');
-        const newTabName = input.value;
-        document.title = newTabName;
-        localStorage.setItem('tabName', newTabName);
-      }
-    </script>
-    <script>
-      function setPanicKey() {
-        var panicKey = document.getElementById("panicKey").value;
-        var panicUrl = document.getElementById("panicUrl").value;
-
-        if (!panicUrl.startsWith("https://")) {
-          panicUrl = "https://" + panicUrl;
+      </script>
+      <script>
+        window.onload = function getname() {
+          if (localStorage.getItem('tabName')) {
+            const savedTabName = localStorage.getItem('tabName');
+            document.title = savedTabName;
+            document.getElementById('name').value = savedTabName;
+          }
         }
-
-        localStorage.setItem("panicKey", panicKey);
-        localStorage.setItem("panicUrl", panicUrl);
-      }
-      document.addEventListener("keydown", function (event) {
-        var storedPanicKey = localStorage.getItem("panicKey");
-        var storedPanicUrl = localStorage.getItem("panicUrl");
-
-        if (event.key === storedPanicKey && storedPanicUrl) {
-          window.location.replace(storedPanicUrl);
+        function setName() {
+          const input = document.getElementById('name');
+          const newTabName = input.value;
+          document.title = newTabName;
+          localStorage.setItem('tabName', newTabName);
         }
-      });
-    </script>
+      </script>
+      <script>
+        function setPanicKey() {
+          var panicKey = document.getElementById("panicKey").value;
+          var panicUrl = document.getElementById("panicUrl").value;
+
+          if (!panicUrl.startsWith("https://")) {
+            panicUrl = "https://" + panicUrl;
+          }
+
+          localStorage.setItem("panicKey", panicKey);
+          localStorage.setItem("panicUrl", panicUrl);
+        }
+        document.addEventListener("keydown", function (event) {
+          var storedPanicKey = localStorage.getItem("panicKey");
+          var storedPanicUrl = localStorage.getItem("panicUrl");
+
+          if (event.key === storedPanicKey && storedPanicUrl) {
+            window.location.replace(storedPanicUrl);
+          }
+        });
+      </script>
 </body>
 <script>
   var defaultIcon = "/assets/img/newlogo.png";
@@ -217,41 +217,42 @@
     reader.readAsDataURL(event.target.files[0]);
   };
 </script>
-<body onload="checkPopups()">
-<script>
-function checkPopups() {
-  var newWin = window.open("", "", "width=100, height=100");
-  if (newWin) {
-    newWin.close();
-    say2();
-  }
-}
 
-function say2() {
-  alert("HELL0! changing the tab name and icon will NOT work in about:blank to use this feature please block this tabs popups om your sotes settings thanks!");
-}
-</script>
+<body onload="checkPopups()">
+  <script>
+    function checkPopups() {
+      var newWin = window.open("", "", "width=100, height=100");
+      if (newWin) {
+        newWin.close();
+        say2();
+      }
+    }
+
+    function say2() {
+      alert("HELL0! changing the tab name and icon will NOT work in about:blank to use this feature please block this tabs popups om your sotes settings thanks!");
+    }
+  </script>
   <script>
     window.addEventListener('keydown', (event) => {
       const keysPressed = (event.key === '~');
       if (keysPressed) {
         localStorage.clear();
         alert('All settings save data cleared');
-    location.reload(true);
+        location.reload(true);
       }
     });
   </script>
   <script>
-window.addEventListener('keydown', (event) => {
-  const keysPressed = (event.key === '`');
-  if (keysPressed) {
-    document.cookie.split(";").forEach(cookie => {
-      document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+    window.addEventListener('keydown', (event) => {
+      const keysPressed = (event.key === '`');
+      if (keysPressed) {
+        document.cookie.split(";").forEach(cookie => {
+          document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        });
+        alert('All saved cookie data cleared');
+        location.reload(true);
+      }
     });
-    alert('All saved cookie data cleared');
-    location.reload(true);
-  }
-});
   </script>
   <script>
     const firstVisit = localStorage.getItem('firstVisit');
@@ -260,4 +261,6 @@ window.addEventListener('keydown', (event) => {
       localStorage.setItem('firstVisit', true);
     }
   </script>
+  </main>
+
 </html>
