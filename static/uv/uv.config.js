@@ -24,18 +24,25 @@ self.__uv$config = {
       }
 
 
-      function setPanicKey() {
-        var panicKey = document.getElementById("panicKey").value;
-        localStorage.setItem("panicKey", panicKey);
-      }
+function setPanicKey() {
+    var panicKey = document.getElementById("panicKey").value;
+    var panicUrl = document.getElementById("panicUrl").value;
 
-      function checkPanicKey(event) {
-        var storedPanicKey = localStorage.getItem("panicKey");
-        if (event.key === storedPanicKey) {
-          window.location.href = "https://www.google.com/";
-        }
-      }
-      document.addEventListener("keydown", checkPanicKey);
+    if (!panicUrl.startsWith("https://")) {
+        panicUrl = "https://" + panicUrl;
+    }
+
+    localStorage.setItem("panicKey", panicKey);
+    localStorage.setItem("panicUrl", panicUrl);
+}
+document.addEventListener("keydown", function (event) {
+    var storedPanicKey = localStorage.getItem("panicKey");
+    var storedPanicUrl = localStorage.getItem("panicUrl");
+
+    if (event.key === storedPanicKey && storedPanicUrl) {
+        window.location.replace(storedPanicUrl);
+    }
+});
 
   var defaultIcon = "/assets/img/newlogo.png";
 
