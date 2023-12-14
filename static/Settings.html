@@ -121,19 +121,19 @@
         }
       </script>
       <script>
-        window.onload = function getname() {
-          if (localStorage.getItem('tabName')) {
-            const savedTabName = localStorage.getItem('tabName');
-            document.title = savedTabName;
-            document.getElementById('name').value = savedTabName;
-          }
+  window.onload = function getname() {
+        if (localStorage.getItem('tabName')) {
+          const savedTabName = localStorage.getItem('tabName');
+          document.title = savedTabName;
+          document.getElementById('name').value = savedTabName;
         }
-        function setName() {
-          const input = document.getElementById('name');
-          const newTabName = input.value;
-          document.title = newTabName;
-          localStorage.setItem('tabName', newTabName);
-        }
+      }
+      function setName() {
+        const input = document.getElementById('name');
+        const newTabName = input.value;
+        document.title = newTabName;
+        localStorage.setItem('tabName', newTabName);
+      }
       </script>
       <script>
         function setPanicKey() {
