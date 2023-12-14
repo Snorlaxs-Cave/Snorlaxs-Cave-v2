@@ -9,19 +9,21 @@ self.__uv$config = {
     sw: '/uv/uv.sw.js',
 };
 
-  window.onload = function getname() {
-        if (localStorage.getItem('tabName')) {
-          const savedTabName = localStorage.getItem('tabName');
-          document.title = savedTabName;
-          document.getElementById('name').value = savedTabName;
-        }
+      function changeTabName() {
+          var name = document.getElementById('name').value;
+          document.title = name;
+          localStorage.setItem('tabName', name);
       }
-      function setName() {
-        const input = document.getElementById('name');
-        const newTabName = input.value;
-        document.title = newTabName;
-        localStorage.setItem('tabName', newTabName);
+
+      function loadTabName() {
+          var name = localStorage.getItem('tabName');
+          if (name) {
+              document.title = name;
+              document.getElementById('name').value = name;
+          }
       }
+
+      window.addEventListener('load', loadTabName);
 
 
 function setPanicKey() {
