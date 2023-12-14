@@ -80,11 +80,11 @@
         <br>
         <h1 class="large">Change Tab Name</h1>
         <br>
-        <a href="#" onclick="setName()" style="text-decoration: none;color:white;">
+        <a href="#" onclick="changeTabName()" style="text-decoration: none;color:white;">
           <p>
             <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="name"
               placeholder="Enter A New Name">
-            <button onclick="setName()">Change Tab</button>
+            <button onclick="changeTabName()">Change Tab</button>
           </p>
         </a>
         <br>
@@ -121,19 +121,20 @@
         }
       </script>
       <script>
-  window.onload = function getname() {
-        if (localStorage.getItem('tabName')) {
-          const savedTabName = localStorage.getItem('tabName');
-          document.title = savedTabName;
-          document.getElementById('name').value = savedTabName;
-        }
+      function changeTabName() {
+          var name = document.getElementById('name').value;
+          document.title = name;
+          localStorage.setItem('tabName', name);
       }
-      function setName() {
-        const input = document.getElementById('name');
-        const newTabName = input.value;
-        document.title = newTabName;
-        localStorage.setItem('tabName', newTabName);
+
+      function loadTabName() {
+          var name = localStorage.getItem('tabName');
+          if (name) {
+              document.title = name;
+              document.getElementById('name').value = name;
+          }
       }
+      window.addEventListener('load', loadTabName);
       </script>
       <script>
         function setPanicKey() {
