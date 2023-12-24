@@ -76,7 +76,7 @@
         if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
           if (checkPopups()) {
             sessionStorage.setItem('tabOpened', 'true');
-            var win = window.open('about:blank', '_blank'); // Removed the URL fragment
+            var win = window.open('about:blank', '_blank'); 
             win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
             win.onbeforeunload = function () {
               sessionStorage.removeItem('tabOpened');
