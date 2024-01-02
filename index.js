@@ -18,6 +18,7 @@ app.use(
 );
 
 app.use(express.static(path.join(__dirname, "static")));
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "index.html"));
 });
@@ -75,7 +76,7 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on("listening", () => {
-  console.log(`Snorlax's Cave listening on port 8080 ${process.env.PORT}`);
+  console.log(`Snorlax's Cave listening on port ${process.env.PORT}`);
 });
 
 server.listen({
