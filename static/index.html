@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Snorlax's Cave brings your students the best learning methods and skills to help them be the best and most efficient at studying!" />
+  <title>Home | Snorlax's Cave</title>
+  <meta name="image" content="assets/img/icon.png">
+  <link rel="icon" href="/assets/img/newlogo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <meta name="sps-bot" content="true">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/animations.css" />
+  <script src="/assets/js/functions.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="heading">
+      <a href="/#" class="headinglink">Snorlax's Cave</a>
+    </div>
+    <ul class="nav-links">
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/math">Games</a></li>
+      <li><a href="/english">Apps</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/settings">Settings</a></li>
+    </ul>
+  </nav>
+  <div class="home">
+    <form class="proxyform">
+      <div data-m="bounce-down" data-m-duration="1">
+        <h1 class="large">Welcome to Snorlax's Cave!</h1>
+        <br>
+        <form method="POST" autocomplete="off">
+          <input type="text" name="url" class="form__input proxybar" id="name" tag="searchbar" style="font-family:poppins;font-size:20px;z-index:1;"
+          placeholder="Type URL or search query">
+          <script src="/assets/js/index.js"></script>
+          <script src="/uv/uv.handler.js"></script>
+          <script src="/uv/uv.bundle.js"></script>
+          <script src="/uv/uv.config.js"></script>
+        </form>
+        <br>
+    </form>
+  </div>
+  <div class="v2" onclick="window.open('https://github.com/SPS-Services/Snorlaxs-Cave', '_blank')">
+    <div style="cursor: pointer; color: rgb(255, 255, 255);">V2.0 BETA</div>
+    <script>
+      // Custom Background Check
+      var bgUrl = localStorage.getItem('backgroundImage');
+      if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+        document.body.style.backgroundImage = `url('/assets/img/snorlax_background.jpg')`;
+      } else {
+        document.body.style.backgroundImage = `url(${bgUrl})`;
+      }
+    </script>
+    <script>
+      function changeTabName() {
+          var name = document.getElementById('name').value;
+          document.title = name;
+          localStorage.setItem('tabName', name);
+      }
+
+      function loadTabName() {
+          var name = localStorage.getItem('tabName');
+          if (name) {
+              document.title = name;
+              document.getElementById('name').value = name;
+          }
+      }
+
+      window.addEventListener('load', loadTabName);
+    </script>
+    <script>
+      function setPanicKey() {
+        var panicKey = document.getElementById("panicKey").value;
+        var panicUrl = document.getElementById("panicUrl").value;
+
+        if (!panicUrl.startsWith("https://")) {
+          panicUrl = "https://" + panicUrl;
+        }
+
+        localStorage.setItem("panicKey", panicKey);
+        localStorage.setItem("panicUrl", panicUrl);
+      }
+      document.addEventListener("keydown", function (event) {
+        var storedPanicKey = localStorage.getItem("panicKey");
+        var storedPanicUrl = localStorage.getItem("panicUrl");
+
+        if (event.key === storedPanicKey && storedPanicUrl) {
+          window.location.replace(storedPanicUrl);
+        }
+      });
+    </script>
+</body>
+<script>
+  function changeIcon() {
+    var iconUrl = document.getElementById("iconUrl").value;
+    localStorage.setItem("iconUrl", iconUrl);
+
+    var link = document.querySelector("link[rel*='icon']");
+    if (link) {
+      link.parentNode.removeChild(link);
+    }
+
+    var newLink = document.createElement("link");
+    newLink.type = "image/x-icon";
+    newLink.rel = "icon";
+    newLink.href = iconUrl;
+    document.head.appendChild(newLink);
+  }
+
+  window.addEventListener("DOMContentLoaded", function () {
+    var storedIconUrl = localStorage.getItem("iconUrl");
+    if (storedIconUrl) {
+      document.getElementById("iconUrl").value = storedIconUrl;
+      changeIcon();
+    }
+  });
+  window.addEventListener("DOMContentLoaded", function () {
+    var storedIconUrl = localStorage.getItem("iconUrl");
+    if (storedIconUrl) {
+      var link = document.createElement("link");
+      link.type = "image/x-icon";
+      link.rel = "icon";
+      link.href = storedIconUrl;
+      document.head.appendChild(link);
+    }
+  });
+</script>
+<script>
+  window.onload = function () {
+    var savedImage = localStorage.getItem('backgroundImage');
+    if (savedImage) {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + savedImage + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+    }
+  };
+
+  var loadFile = function () {
+    document.getElementById('fileInput').click();
+  };
+
+  var showImage = function (event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + reader.result + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+
+      localStorage.setItem('backgroundImage', reader.result);
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+</script>
+<script>
+  window.onload = function () {
+    var savedImage = localStorage.getItem('backgroundImage');
+    if (savedImage) {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + savedImage + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+    }
+  };
+
+  var loadFile = function () {
+    document.getElementById('fileInput').click();
+  };
+
+  var showImage = function (event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.body;
+      output.style.backgroundImage = "url('" + reader.result + "')";
+      output.style.backgroundSize = "cover";
+      output.style.backgroundRepeat = "no-repeat";
+
+      localStorage.setItem('backgroundImage', reader.result);
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+</script>
+<script>
+  const visited = localStorage.getItem('visited');
+  if (!visited) {
+    alert('HELLO! Welcome to Snorlax\'s Cave V2');
+    localStorage.setItem('visited', true);
+  }
+</script>
+<script>
+  window.addEventListener('keydown', (event) => {
+    const keysPressed = (event.key === '~');
+    if (keysPressed) {
+      localStorage.clear();
+      alert('All settings save data cleared');
+      location.reload(true);
+    }
+  });
+</script>
+<script>
+  window.addEventListener('keydown', (event) => {
+    const keysPressed = (event.key === '`');
+    if (keysPressed) {
+      document.cookie.split(";").forEach(cookie => {
+        document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+      });
+      alert('All saved cookie data cleared');
+      location.reload(true);
+    }
+  });
+</script>
+<audio id="myAudio">
+  <source src="Snorlax.mp4" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+  var keys = {};
+
+  window.addEventListener('keydown', function (e) {
+    keys[e.key] = true;
+    if (keys['s'] && keys['b']) {
+      document.getElementById('myAudio').play();
+      localStorage.setItem('audioPlayed', 'true');
+    }
+  });
+
+  window.addEventListener('keyup', function (e) {
+    keys[e.key] = false;
+  });
+
+  window.addEventListener('load', function () {
+    if (localStorage.getItem('audioPlayed') === 'true') {
+      document.getElementById('myAudio').play();
+    }
+  });
+</script>
+</div>
+</body>
+
+</html>
