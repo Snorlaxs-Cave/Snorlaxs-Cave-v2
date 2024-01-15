@@ -213,31 +213,6 @@
     }
   });
 </script>
-<audio id="myAudio">
-  <source src="Snorlax.mp4" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<script>
-  var keys = {};
-
-  window.addEventListener('keydown', function (e) {
-    keys[e.key] = true;
-    if (keys['s'] && keys['b']) {
-      document.getElementById('myAudio').play();
-      localStorage.setItem('audioPlayed', 'true');
-    }
-  });
-
-  window.addEventListener('keyup', function (e) {
-    keys[e.key] = false;
-  });
-
-  window.addEventListener('load', function () {
-    if (localStorage.getItem('audioPlayed') === 'true') {
-      document.getElementById('myAudio').play();
-    }
-  });
-</script>
 </div>
 </body>
 
