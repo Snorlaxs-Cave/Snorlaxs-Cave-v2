@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +9,22 @@
   <title>Home | Snorlax's Cave</title>
   <meta name="image" content="assets/img/icon.png">
   <link rel="icon" href="/assets/img/newlogo.png">
+  <script data-cfasync="false" typ="text/javascript" src="ads.js"></script>
+  <script data-cfasync="false" typ="text/javascript" src="ads2.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
   <meta name="sps-bot" content="true">
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="stylesheet" href="/assets/css/animations.css" />
   <script src="/assets/js/functions.js"></script>
 </head>
+<script type='text/javascript'
+  src='//pl22001181.toprevenuegate.com/02/12/cf/0212cfc4c514146064b18fc0f0a6b7ba.js'></script>
+<script type='text/javascript'
+  src='//pl22001175.toprevenuegate.com/95/cd/e7/95cde76a59eda686229f6f375f35c98a.js'></script>
+<script async="async" data-cfasync="false"
+  src="//pl22001184.toprevenuegate.com/f477be14226dd5571772175c1864a940/invoke.js"></script>
+<div id="container-f477be14226dd5571772175c1864a940"></div>
+
 <body>
   <nav>
     <div class="heading">
@@ -32,19 +43,15 @@
       <div data-m="bounce-down" data-m-duration="1">
         <h1 class="large">Welcome to Snorlax's Cave!</h1>
         <br>
-        <form method="POST" autocomplete="off">
-          <input type="text" name="url" class="form__input proxybar" id="name" tag="searchbar" style="font-family:poppins;font-size:20px;z-index:1;"
-          placeholder="Type URL or search query">
-          <script src="/assets/js/index.js"></script>
-          <script src="/uv/uv.handler.js"></script>
-          <script src="/uv/uv.bundle.js"></script>
-          <script src="/uv/uv.config.js"></script>
-        </form>
+        <input class="proxy" placeholder="Search The Web" style="color:white;"></input>
         <br>
     </form>
   </div>
   <div class="v2" onclick="window.open('https://github.com/SPS-Services/Snorlaxs-Cave', '_blank')">
     <div style="cursor: pointer; color: rgb(255, 255, 255);">V2.0 BETA</div>
+    <script src="/assets/js/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
     <script>
       // Custom Background Check
       var bgUrl = localStorage.getItem('backgroundImage');
@@ -55,21 +62,38 @@
       }
     </script>
     <script>
-      function changeTabName() {
-          var name = document.getElementById('name').value;
-          document.title = name;
-          localStorage.setItem('tabName', name);
-      }
-
-      function loadTabName() {
-          var name = localStorage.getItem('tabName');
-          if (name) {
-              document.title = name;
-              document.getElementById('name').value = name;
+      window.addEventListener('load', function () {
+        var currentUrl = window.location.href;
+        if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
+          if (window.open('', '_blank')) {
+            sessionStorage.setItem('tabOpened', 'true');
+            var win = window.open('about:blank', '_blank');
+            win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
+            win.onbeforeunload = function () {
+              sessionStorage.removeItem('tabOpened');
+            };
+            window.close();
+          } else if (!sessionStorage.getItem('alertShown')) {
+            alert("Please enable pop-ups for auto about:blank cloaking to work.");
+            sessionStorage.setItem('alertShown', 'true');
           }
+        }
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        if (localStorage.getItem('tabName')) {
+          const savedTabName = localStorage.getItem('tabName');
+          document.title = savedTabName;
+          document.getElementById('name').value = savedTabName;
+        }
       }
-
-      window.addEventListener('load', loadTabName);
+      function setName() {
+        const input = document.getElementById('name');
+        const newTabName = input.value;
+        document.title = newTabName;
+        localStorage.setItem('tabName', newTabName);
+      }
     </script>
     <script>
       function setPanicKey() {
@@ -210,6 +234,65 @@
       });
       alert('All saved cookie data cleared');
       location.reload(true);
+    }
+  });
+</script>
+<audio id="myAudio">
+  <source src="Snorlax.mp4" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+  var keys = {};
+
+  window.addEventListener('keydown', function (e) {
+    keys[e.key] = true;
+    if (keys['s'] && keys['b']) {
+      document.getElementById('myAudio').play();
+      localStorage.setItem('audioPlayed', 'true');
+    }
+  });
+
+  window.addEventListener('keyup', function (e) {
+    keys[e.key] = false;
+  });
+
+  window.addEventListener('load', function () {
+    if (localStorage.getItem('audioPlayed') === 'true') {
+      document.getElementById('myAudio').play();
+    }
+  });
+</script>
+<script>
+  function checkPopups() {
+    var newWin = window.open("", "", "width=100, height=100");
+    if (newWin) {
+      newWin.close();
+      return true;
+    } else {
+      say1();
+      return false;
+    }
+  }
+
+  function say1() {
+    alert("HELL0! for auto cloaking in about:blank please allow pop ups!");
+  }
+
+  window.addEventListener('load', function () {
+    var currentUrl = window.location.href;
+    var bgUrl = localStorage.getItem('backgroundImage');
+    if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
+      if (checkPopups()) {
+        sessionStorage.setItem('tabOpened', 'true');
+        var win = window.open('about:blank', '_blank');
+        win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
+        win.onbeforeunload = function () {
+          sessionStorage.removeItem('tabOpened');
+        };
+        window.close();
+      } else if (!sessionStorage.getItem('alertShown')) {
+        sessionStorage.setItem('alertShown', 'true');
+      }
     }
   });
 </script>
