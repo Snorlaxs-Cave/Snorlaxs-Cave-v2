@@ -37,6 +37,4 @@ node index.js
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/SPS-Services/Snorlaxs-Cave&branch=main&name=Snorlaxs-Cave)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/SPS-Services/Snorlaxs-Cave)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/SPS-Services/Snorlaxs-Cave)
-## Contributors:
-[![Contrib](https://contrib.rocks/image?repo=SPS-Services/Snorlaxs-Cave-v1#)](https://github.com/SPS-Services/Snorlaxs-Cave-v1/graphs/contributors)
 ## **[SUPPORT US!](https://patreon.com/SnorlaxCave)**
