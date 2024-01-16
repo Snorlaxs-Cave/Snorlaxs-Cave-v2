@@ -1,1 +1,73 @@
-<h1>loading site fr, edit this loading screen to make css better and stuff but this is the loading screen for now.</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+#loading-text {
+  display: flex;  
+  font-size: 30px;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+#dot1 {
+  animation: fade 1s infinite;
+}
+
+#dot2 {
+  animation: fade 1s infinite 0.3s; 
+}
+
+#dot3 {
+  animation: fade 1s infinite 0.6s;
+}
+
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    img {
+      width: 200px;
+    }
+#loading-text {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: -210px;
+  position: absolute;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<div id="loading-screen">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.l7JGflUfCSa5atFWZZ4YbgAAAA?rs=1&pid=ImgDetMain">
+  
+<div id="loading-text">
+  <h7>Loading</h7>
+  
+  <span id="dot1">.</span>
+  <span id="dot2">.</span>
+  <span id="dot3">.</span> 
+</div>
+</div>
+
+</body>
+</html>
