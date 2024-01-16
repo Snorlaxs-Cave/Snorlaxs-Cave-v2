@@ -301,15 +301,15 @@ nav {
   width: 600px;
   height: 60px;
   text-align: center;
-  border: solid 1px;
+  border: solid white 1px;
   border-radius: 10px;
   outline: none;
   transition: .2s;
 }
 
 .proxy:hover {
-  background-color: rgba(7, 7, 7, 0.459);
-  color: white;
+  background-color: rgba(7, 7, 7, 0.137);
+  color: rgb(0, 0, 0);
   transition: .2s;
 }
 
@@ -320,28 +320,34 @@ nav {
 }
 
 .apps {
-  padding: 30px;
-  text-align: center;
-  margin: auto;
-  position: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding: 30px;
   background-color: rgba(14, 13, 13, 0.459);
-  gap: 10px;
   border-radius: 20px;
-  width: fit-content;
+  gap: 20px;
 }
 
 .apps a {
+  width: 120px;
   font-family: "Montserrat", sans-serif;
   color: white;
   text-decoration: none;
-  font-size: 20px;
-  transition: .1s
+  font-size: 14px;
+  text-align: center;
+  transition: 0.1s;
+}
+
+.apps img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
 
 .apps a:hover {
-  transform: scale(1.09);
-  transition: .1s
+  transform: scale(1.1);
 }
 
 .rounded {
