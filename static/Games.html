@@ -49,6 +49,7 @@
       <form id="searchForm" onsubmit="return false;">
         <input id="searchApps" placeholder="Search Games" class="searchbar">
       </form>
+    </div>
     <div class="apps">
       <div class="search-results" style="display: flex; justify-content: center; flex-wrap: wrap; gap:10px;">
         <div id="searchMessage"
@@ -255,7 +256,9 @@
       </a>
       </div>
       <br>
-      <div class="intro" style="padding: 5px;">
+      <div class="intro" style="
+    padding: 5px;
+">
         <p style="padding:30px;font-size:20px;font-style: italic;">All games belong to respective owner! If any issues,
           email us at birdy@snorlaxscave.site</p>
       </div>
@@ -428,6 +431,12 @@
             location.reload(true);
           }
         });
+      </script>
+      <script>
+        window.navigator.serviceWorker
+        .register("/sw,js", {
+        scope: __uv$config.prefix
+      })
       </script>
   </main>
 </body>
