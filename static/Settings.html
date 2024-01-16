@@ -122,21 +122,20 @@
           document.body.style.backgroundImage = `url(${bgUrl})`;
         }
       </script>
-      <script>
-      function changeTabName() {
-          var name = document.getElementById('name').value;
-          document.title = name;
-          localStorage.setItem('tabName', name);
+<script>
+  window.onload = function getname() {
+        if (localStorage.getItem('tabName')) {
+          const savedTabName = localStorage.getItem('tabName');
+          document.title = savedTabName;
+          document.getElementById('name').value = savedTabName;
+        }
       }
-
-      function loadTabName() {
-          var name = localStorage.getItem('tabName');
-          if (name) {
-              document.title = name;
-              document.getElementById('name').value = name;
-          }
+      function setName() {
+        const input = document.getElementById('name');
+        const newTabName = input.value;
+        document.title = newTabName;
+        localStorage.setItem('tabName', newTabName);
       }
-      window.addEventListener('load', loadTabName);
       </script>
       <script>
         function setPanicKey() {
