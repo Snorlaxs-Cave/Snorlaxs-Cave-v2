@@ -2,7 +2,8 @@ function apps(url) {
   window.navigator.serviceWorker.register('/sw.js', {
     scope: __uv$config.prefix
 }).then(() => {
-    location.href=__uv$config.prefix + __uv$config.encodeUrl(url);
+    localStorage.setItem('agUrl', location.href=__uv$config.prefix + __uv$config.encodeUrl(url));
+    location.href = '/dashboard';
 });
 }
 
