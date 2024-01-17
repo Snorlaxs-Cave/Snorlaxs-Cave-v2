@@ -37,6 +37,9 @@ app.get("/settings", (req, res) => {
 app.get("/portal", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "loader.html"));
 });
+app.get("/dashboard", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "agloader.html"));
+});
 app.get("/snorlax", (req, res) => {
   res.sendFile(path.join(__dirname, "static/people-secrets/", "snorlax.html"));
 });
