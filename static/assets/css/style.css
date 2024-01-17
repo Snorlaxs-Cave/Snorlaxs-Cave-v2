@@ -52,12 +52,28 @@ button:hover {
 
 input {
   background-color: rgba(2, 2, 2, 0.185);
+  color: white;
   border: 2px solid rgb(70, 70, 70);
   outline: none;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
 }
+  #imageUrl::placeholder {
+    color: white;
+  }
+  #imageUrl::placeholder {
+    color: white;
+  }
+  #name::placeholder {
+    color: white;
+  }
+  #panicUrl::placeholder {
+    color: white;
+  }
+  #panicKey::placeholder {
+    color: white;
+  }
 
 .body-text {
   display: flex;
@@ -574,10 +590,4 @@ nav {
 .v2 a:hover {
   transform: scale(1.09);
   transition: .1s
-}
-main {
-  padding-top: 9vh;
-}
-.home {
-  padding-top: 15vh; 
 }
