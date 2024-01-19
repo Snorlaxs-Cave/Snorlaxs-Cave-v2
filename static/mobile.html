@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/assets/css/animations.css" />
   <script src="/assets/js/functions.js"></script>
 <style>
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 2000px) {
 body {
   background-color: #003390; 
 }
@@ -54,14 +54,35 @@ body {
   color: white;
   transition: .2s;  
 }
-button {
+.btn {
+ position: absolute; 
+ bottom: 90px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 90%;
  background-color: transparent;
  padding: 10px;
  color: white;
  border: solid white 1px;
  border-radius: 10px;
 }
-button:hover {
+.btn:hover {
+ background-color: white;
+ color: black;
+}
+.btn2 {
+ position: absolute; 
+ bottom: 30px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 90%;
+ background-color: transparent;
+ padding: 10px;
+ color: white;
+ border: solid white 1px;
+ border-radius: 10px;
+}
+.btn2:hover {
  background-color: white;
  color: black;
 }
@@ -83,9 +104,8 @@ button:hover {
           <script src="/uv/uv.bundle.js"></script>
           <script src="/uv/uv.config.js"></script>
         </form>
-        <br>
-        <br>
-<button onclick="location.href='mobileapps.html'">APPS</button>
-<button onclick="location.href='mobilegames.html'">GAME</button>
+      </div>
+<button class="btn" onclick="location.href='mobileapps.html'">APPS</button>
+<button class="btn2" onclick="location.href='mobilegames.html'">GAME</button>
 </body>
 </html>
