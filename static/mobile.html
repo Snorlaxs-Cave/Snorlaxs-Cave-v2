@@ -13,10 +13,19 @@
   <link rel="stylesheet" href="/assets/css/animations.css" />
   <script src="/assets/js/functions.js"></script>
 <style>
-@media only screen and (max-width: 2000px) {
 body {
-  background-color: #003390; 
+
+background: url("https://th.bing.com/th/id/OIG.DXKuS90TiaPcZL.vVIbP?pid=ImgGn") no-repeat fixed; 
+background-size: cover;
+
+margin: 0;
+height: 100vh;
+
 }
+h1 {
+  color: black;
+}
+@media only screen and (max-width: 2000px) {
 .proxyform {
   text-align: center;
   background-color: transparent;
@@ -24,34 +33,34 @@ body {
   margin: auto;
   position: center;
   justify-content: center;
-  color: white;
+  color: black;
   border: transparent;
   border-radius: 20px;
 }
 
 .proxy {
-  background-color: transparent;
+  background-color: rgba(230, 173, 173, 0.5);
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   width: 90%;
   max-width: 600px;
   height: 40px;
   text-align: center;
-  border: solid white 1px;
+  border: solid black 1px;
   border-radius: 10px;
   outline: none;
   transition: .2s;
 }
 
 .proxy:hover {
-  background-color: transparent;
-  color: white;
+  background-color: lightblue;
+  color: black;
   transition: .2s;
 }
 
 .proxy:focus {
-  background-color: transparent;
-  color: white;
+  background-color: lightblue;
+  color: black;
   transition: .2s;  
 }
 .btn {
@@ -60,14 +69,14 @@ body {
  left: 50%;
  transform: translateX(-50%);
  width: 90%;
- background-color: transparent;
+ background-color: rgba(173, 216, 230, 0.5);
  padding: 10px;
- color: white;
- border: solid white 1px;
+ color: black;
+ border: solid black 1px;
  border-radius: 10px;
 }
 .btn:hover {
- background-color: white;
+ background-color: lightblue;
  color: black;
 }
 .btn2 {
@@ -76,14 +85,14 @@ body {
  left: 50%;
  transform: translateX(-50%);
  width: 90%;
- background-color: transparent;
+ background-color: rgba(173, 216, 230, 0.5);
  padding: 10px;
- color: white;
- border: solid white 1px;
+ color: black;
+ border: solid black 1px;
  border-radius: 10px;
 }
 .btn2:hover {
- background-color: white;
+ background-color: lightblue;
  color: black;
 }
 </style>
@@ -96,7 +105,7 @@ body {
   <br>
     <form class="proxyform">
       <div data-m="bounce-down" data-m-duration="1">
-        <h1 class="large">Mobile Cave!</h1>
+        <h1>Mobile Cave!</h1>
         <form method="POST" autocomplete="off">
           <input type="text" name="url" class="proxy" id="search" tag="searchbar" placeholder="Search the web!">
           <script src="/assets/js/index.js"></script>
@@ -107,5 +116,12 @@ body {
       </div>
 <button class="btn" onclick="location.href='mobileapps.html'">APPS</button>
 <button class="btn2" onclick="location.href='mobilegames.html'">GAMES</button>
+<script>
+  const visited = localStorage.getItem('visited');
+  if (!visited) {
+    alert('HELLO! Welcome to Snorlax\'s Cave mobile! for more features and better ui use a computer!');
+    localStorage.setItem('visited', true);
+  }
+</script>
 </body>
 </html>
