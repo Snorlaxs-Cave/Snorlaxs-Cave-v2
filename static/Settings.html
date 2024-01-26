@@ -35,7 +35,10 @@
   <br>
   <br>
   <br>
-    <div class="settings">
+  <br>
+  <br>
+  <div class="settings-container">
+    <div class="settings-item">
       <br>
       <h1 class="large">Background Changer</h1>
       <div class="search-results" style="display: block;justify-content: center; flex-wrap: wrap; gap:10px;">
@@ -68,91 +71,90 @@
         <br>
         <br>
       </div>
-      </br>
-      <div class="settings2">
-        <br>
-        <h1 class="large">Change Tab Name</h1>
-        <br>
-        <a href="#" onclick="changeTabName()" style="text-decoration: none;color:white;">
-          <p>
-            <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="name"
-              placeholder="Enter A New Name">
-            <button onclick="changeTabName()">Change Tab</button>
-          </p>
-        </a>
-        <br>
-        <br>
-        <h1 class="large">Panic Key</h1>
-        <br>
-        <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicKey"
-          placeholder="Enter panic key">
-        <br>
-        <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicUrl"
-          placeholder="Enter panic URL">
-        <br>
-        <button onclick="setPanicKey()">Set Panic Key</button>
-        <br>
-        <br>
-        <br>
-        <p>
-        <h1 class="large">Change Tab Icon</h1>
-        <br>
-        <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="iconUrl"
-          placeholder="Enter icon URL">
-        <button onclick="changeIcon()">Change Icon</button>
-      </div>
+      <br>
     </div>
-
-      <script src="/assets/js/index.js"></script>
-      <script src="/uv/uv.bundle.js"></script>
-      <script src="/uv/uv.config.js"></script>
-      <script>
-        // Custom Background Check
-        var bgUrl = localStorage.getItem('backgroundImage');
-        if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
-          document.body.style.backgroundImage = `url('/assets/img/snorlax_background.jpg')`;
-        } else {
-          document.body.style.backgroundImage = `url(${bgUrl})`;
-        }
-      </script>
-      <script>
+    <div class="settings-item">
+      <br>
+      <h1 class="large">Change Tab Name</h1>
+      <br>
+      <a href="#" onclick="changeTabName()" style="text-decoration: none;color:white;">
+        <p>
+          <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="name"
+            placeholder="Enter A New Name">
+          <button onclick="changeTabName()">Change Tab</button>
+        </p>
+      </a>
+      <br>
+      <br>
+      <h1 class="large">Panic Key</h1>
+      <br>
+      <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicKey"
+        placeholder="Enter panic key">
+      <br>
+      <input class="search-bar" style="width:400px;height:50px;margin:10px;" type="text" id="panicUrl"
+        placeholder="Enter panic URL">
+      <br>
+      <button onclick="setPanicKey()">Set Panic Key</button>
+      <br>
+      <br>
+      <br>
+      <p>
+      <h1 class="large">Change Tab Icon</h1>
+      <br>
+      <input class="search-bar" style="width:250px;height:50px;margin:10px;" type="text" id="iconUrl"
+        placeholder="Enter icon URL">
+      <button onclick="changeIcon()">Change Icon</button>
+    </div>
+    <script src="/assets/js/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script>
+      // Custom Background Check
+      var bgUrl = localStorage.getItem('backgroundImage');
+      if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+        document.body.style.backgroundImage = `url('/assets/img/snorlax_background.jpg')`;
+      } else {
+        document.body.style.backgroundImage = `url(${bgUrl})`;
+      }
+    </script>
+    <script>
       function changeTabName() {
-          var name = document.getElementById('name').value;
-          document.title = name;
-          localStorage.setItem('tabName', name);
+        var name = document.getElementById('name').value;
+        document.title = name;
+        localStorage.setItem('tabName', name);
       }
 
       function loadTabName() {
-          var name = localStorage.getItem('tabName');
-          if (name) {
-              document.title = name;
-              document.getElementById('name').value = name;
-          }
+        var name = localStorage.getItem('tabName');
+        if (name) {
+          document.title = name;
+          document.getElementById('name').value = name;
+        }
       }
 
       window.addEventListener('load', loadTabName);
-      </script>
-      <script>
-        function setPanicKey() {
-          var panicKey = document.getElementById("panicKey").value;
-          var panicUrl = document.getElementById("panicUrl").value;
+    </script>
+    <script>
+      function setPanicKey() {
+        var panicKey = document.getElementById("panicKey").value;
+        var panicUrl = document.getElementById("panicUrl").value;
 
-          if (!panicUrl.startsWith("https://")) {
-            panicUrl = "https://" + panicUrl;
-          }
-
-          localStorage.setItem("panicKey", panicKey);
-          localStorage.setItem("panicUrl", panicUrl);
+        if (!panicUrl.startsWith("https://")) {
+          panicUrl = "https://" + panicUrl;
         }
-        document.addEventListener("keydown", function (event) {
-          var storedPanicKey = localStorage.getItem("panicKey");
-          var storedPanicUrl = localStorage.getItem("panicUrl");
 
-          if (event.key === storedPanicKey && storedPanicUrl) {
-            window.location.replace(storedPanicUrl);
-          }
-        });
-      </script>
+        localStorage.setItem("panicKey", panicKey);
+        localStorage.setItem("panicUrl", panicUrl);
+      }
+      document.addEventListener("keydown", function (event) {
+        var storedPanicKey = localStorage.getItem("panicKey");
+        var storedPanicUrl = localStorage.getItem("panicUrl");
+
+        if (event.key === storedPanicKey && storedPanicUrl) {
+          window.location.replace(storedPanicUrl);
+        }
+      });
+    </script>
 </body>
 <script>
   var defaultIcon = "/assets/img/newlogo.png";
