@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Snorlax's Cave brings your students the best learning methods and skills to help them be the best and most efficient at studying!" />
+  <meta name="description" content="Snorlax's Cave brings your students the best learning methods and skills to help them be the best and most efficient at studying!" />
   <title>Snorlax's Cave</title>
   <meta property="og:image" content="/assets/img/newlogo.png">
   <meta name="image" content="/assets/img/newlogo.png">
@@ -13,90 +12,86 @@
   <meta name="sps-bot" content="true">
   <link rel="stylesheet" href="/assets/css/animations.css" />
   <script src="/assets/js/functions.js"></script>
-<style>
-body {
+  <style>
+    body {
+      background: url("https://th.bing.com/th/id/OIG.DXKuS90TiaPcZL.vVIbP?pid=ImgGn") no-repeat fixed;
+      background-size: cover;
+      margin: 0;
+      height: 100vh;
+    }
 
-background: url("https://th.bing.com/th/id/OIG.DXKuS90TiaPcZL.vVIbP?pid=ImgGn") no-repeat fixed; 
-background-size: cover;
+    h1 {
+      color: black;
+    }
 
-margin: 0;
-height: 100vh;
+    @media only screen and (max-width: 2000px) {
+      .proxyform {
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+        margin: auto;
+        position: center;
+        justify-content: center;
+        color: black;
+        border: transparent;
+        border-radius: 20px;
+      }
 
-}
-h1 {
-  color: black;
-}
-@media only screen and (max-width: 2000px) {
-.proxyform {
-  text-align: center;
-  background-color: transparent;
-  padding: 20px;
-  margin: auto;
-  position: center;
-  justify-content: center;
-  color: black;
-  border: transparent;
-  border-radius: 20px;
-}
+      .proxy {
+        background-color: rgba(230, 173, 173, 0.5);
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        width: 90%;
+        max-width: 600px;
+        height: 40px;
+        text-align: center;
+        border: solid black 1px;
+        border-radius: 10px;
+        outline: none;
+        transition: .2s;
+      }
 
-.proxy {
-  background-color: rgba(230, 173, 173, 0.5);
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  width: 90%;
-  max-width: 600px;
-  height: 40px;
-  text-align: center;
-  border: solid black 1px;
-  border-radius: 10px;
-  outline: none;
-  transition: .2s;
-}
+      .proxy:hover {
+        background-color: lightblue;
+        color: black;
+        transition: .2s;
+      }
 
-.proxy:hover {
-  background-color: lightblue;
-  color: black;
-  transition: .2s;
-}
+      .proxy:focus {
+        background-color: lightblue;
+        color: black;
+        transition: .2s;
+      }
 
-.proxy:focus {
-  background-color: lightblue;
-  color: black;
-  transition: .2s;  
-}
-.btn {
- position: absolute; 
- bottom: 90px;
- left: 50%;
- transform: translateX(-50%);
- width: 90%;
- background-color: rgba(173, 216, 230, 0.5);
- padding: 10px;
- color: black;
- border: solid black 1px;
- border-radius: 10px;
-}
-.btn:hover {
- background-color: lightblue;
- color: black;
-}
-.btn2 {
- position: absolute; 
- bottom: 30px;
- left: 50%;
- transform: translateX(-50%);
- width: 90%;
- background-color: rgba(173, 216, 230, 0.5);
- padding: 10px;
- color: black;
- border: solid black 1px;
- border-radius: 10px;
-}
-.btn2:hover {
- background-color: lightblue;
- color: black;
-}
-</style>
+      .btn,
+      .btn2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        padding: 10px;
+        color: black;
+        border: solid black 1px;
+        border-radius: 10px;
+      }
+
+      .btn {
+        bottom: 90px;
+        background-color: rgba(173, 216, 230, 0.5);
+      }
+
+      .btn2 {
+        bottom: 30px;
+        background-color: rgba(173, 216, 230, 0.5);
+      }
+
+      .btn:hover,
+      .btn2:hover {
+        background-color: lightblue;
+        color: black;
+      }
+    }
+  </style>
 </head>
 <body>
   <br>
@@ -104,25 +99,39 @@ h1 {
   <br>
   <br>
   <br>
-    <form class="proxyform">
-      <div data-m="bounce-down" data-m-duration="1">
-        <h1>Mobile Cave!</h1>
-        <form method="POST" autocomplete="off">
-          <input type="text" name="url" class="proxy" id="search" tag="searchbar" placeholder="Search the web!">
-          <script src="/assets/js/index.js"></script>
-          <script src="/uv/uv.handler.js"></script>
-          <script src="/uv/uv.bundle.js"></script>
-          <script src="/uv/uv.config.js"></script>
-        </form>
-      </div>
-<button class="btn" onclick="location.href='mobileapps.html'">APPS</button>
-<button class="btn2" onclick="location.href='mobilegames.html'">GAMES</button>
-<script>
-  const visited = localStorage.getItem('visited');
-  if (!visited) {
-    alert('HELLO! Welcome to Snorlax\'s Cave mobile! for more features and better ui use a computer!');
-    localStorage.setItem('visited', true);
-  }
-</script>
-</body>
-</html>
+  <form class="proxyform">
+    <div data-m="bounce-down" data-m-duration="1">
+      <h1>Mobile Cave!</h1>
+      <form method="POST" autocomplete="off">
+        <input type="text" name="url" class="proxy" id="search" tag="searchbar" placeholder="Search the web!">
+        <script src="/assets/js/index.js"></script>
+        <script src="/uv/uv.handler.js"></script>
+        <script src="/uv/uv.bundle.js"></script>
+        <script src="/uv/uv.config.js"></script>
+      </form>
+    </div>
+    <center>
+    <div style="align-content: center;">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '7707205fbef64510c14defbad93feb7c',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/7707205fbef64510c14defbad93feb7c/invoke.js"></scr' + 'ipt>');
+    </script>
+    </div>
+  </center>
+    <button class="btn" onclick="location.href='mobileapps.html'">APPS</button>
+    <button class="btn2" onclick="location.href='mobilegames.html'">GAMES</button>
+    <script>
+      const visited = localStorage.getItem('visited');
+      if (!visited) {
+        alert('HELLO! Welcome to Snorlax\'s Cave mobile! For more features and better UI, use a computer!');
+        localStorage.setItem('visited', true);
+      }
+    </script>
+  </body>
+  </html>
