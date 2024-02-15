@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		/*css*/
+		html, body, #container, ruffle-player {
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		#bmc-widget {
+            position: fixed;
+            bottom: 18px;
+            right: 18px;
+        }
+	</style>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X42W1N0Z9Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X42W1N0Z9Q');
+</script>
+</head>
+<body>
+	<div id="container"></div>
+
+	<script>
+		window.RufflePlayer = window.RufflePlayer || {};
+		window.addEventListener("load", (event) => {
+			const ruffle = window.RufflePlayer.newest();
+			const player = ruffle.createPlayer();
+			const container = document.getElementById("container");
+			container.appendChild(player);
+			player.load("/xordasgames/SWF/dl4.swf");
+		});
+	</script>
+	<script src="/xordasgames/ruffle/ruffle.js"></script>
+
+	<div id="bmc-widget">
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Xordas" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    </div>
+
+</body>
+</html>
