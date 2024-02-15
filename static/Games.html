@@ -61,7 +61,23 @@
       <a href="#" onclick="openLink('orteil.dashnet.org/cookieclicker/')">
         <img src="/assets/img/cookie.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Cookie Clicker</img>
       </a>
-      <a href="#" onclick="openLink('cattn.github.io/gba/')">
+
+      <!--Xordas games repo code DO NOT USE -->
+      <a href="http://xordas-game-repo.worksheetsforteachers.xyz/flash-games/ltf.html" onclick="event.preventDefault(); xordas(this.href);">
+        <img src="/assets/img/LTF.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Learn to fly</img>
+      </a>
+
+      <a href="http://xordas-game-repo.worksheetsforteachers.xyz/flash-games/ltf2.html" onclick="event.preventDefault(); xordas(this.href);">
+        <img src="/assets/img/LTF2.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Learn to fly 2</img>
+      </a>
+
+      <a href="http://xordas-game-repo.worksheetsforteachers.xyz/flash-games/ltf3.html" onclick="event.preventDefault(); xordas(this.href);">
+        <img src="/assets/img/LTF3.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Learn to fly 3</img>
+      </a> 
+
+      <!--end of xordas games repo code-->
+
+     <a href="#" onclick="openLink('cattn.github.io/gba/')">
         <img src="/assets/img/gba.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>GBA Games</img>
       </a>
       <a href="#" onclick="openLink('paper-io.com/')">
@@ -208,15 +224,10 @@
       <a href="#" onclick="openLink('krunker.gettingoverschool.repl.co/')">
         <img src="/assets/img/krunker.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Krunker</img>
       </a>
-      <a href="#" onclick="openLink('xordas-game-repo.worksheetsforteachers.xyz/flash-games/ltf.html')">
-        <img src="/assets/img/LTF.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Learn to fly</img>
-      </a>
-      <a href="#" onclick="openLink('xordas-game-repo.worksheetsforteachers.xyz/flash-games/ltf2.html')">
-        <img src="/assets/img/LTF2.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Learn to fly 2</img>
-      </a>
-      <a href="#" onclick="openLink('xordas-game-repo.worksheetsforteachers.xyz/flash-games/ltf3.html')">
-        <img src="/assets/img/LTF3.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Learn to fly 3</img>
-      </a>
+
+
+
+  
       </div>
     </div>
       <br>
@@ -225,6 +236,30 @@
           email us at birdy@snorlaxscave.site</p>
       </div>
       <br>
+
+      <!--temp soloution for xordas-games site-->
+      <script>
+        function xordas(iframeSourceURL) {
+            var newWindow = window.open('about:blank', '_blank');
+            if (!newWindow) {
+                alert('Pop-up blocked. Please allow pop-ups for this site.');
+                return;
+            }
+    
+            newWindow.document.body.style.backgroundColor = '#000000';
+            newWindow.document.body.style.margin = '0';
+    
+            var fullscreenIframe = newWindow.document.createElement('iframe');
+            fullscreenIframe.id = 'fullscreenIframe';
+            fullscreenIframe.src = iframeSourceURL;
+            fullscreenIframe.style.width = '100%';
+            fullscreenIframe.style.height = '100%';
+            fullscreenIframe.style.border = '0';
+            newWindow.document.body.appendChild(fullscreenIframe);
+        }
+    </script>
+    
+
       <script>
         document.getElementById('searchApps').addEventListener('input', function (event) {
           const query = this.value.toLowerCase();
