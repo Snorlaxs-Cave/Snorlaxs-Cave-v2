@@ -17,12 +17,15 @@ Snorlax's Cave is a UV built proxy and game site **(v2.0 Release)**
 
 ## Local Hosting
 
+### Clone the GitHub repo
 ```bash
 git clone https://github.com/SPS-Services/Snorlaxs-Cave-v2.git
 ```
+### Navigate into the directory of the repo
 ```bash
 cd snorlaxs cave
 ```
+### Use NodeJS to start Snorlax
 ```bash
 node index.js
 ```
